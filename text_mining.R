@@ -11,7 +11,7 @@ library(RColorBrewer)
 library(ggplot2)
 library(xlsx)
 
-setwd("D:/RProjects/EG2019_word_cloud")
+setwd("D:/GitHub/EG2019_word_cloud")
 
 party <- "DA" # Introduce political party folder
 party_color <- switch(party, "DA" = "#e9512a", "LA" = "#1eb1ec", "PS" = "#bf1322", "SDP" = "#a81853", "TV" = "#2e2a61", "UPA" = "#16428a", "all" = "#d3d3d3")
@@ -22,7 +22,7 @@ avoid_words <- c("eleccions", "programa", "benvolguda", "benvolgut", "del", "del
   "sdp", "puguin", "volem", "tenir", "fer", "andorra", "manera")
 
 # Load files in texts folder
-cname <- sprintf("D:/RProjects/EG2019_word_cloud/input/%s", party)
+cname <- sprintf("D:/GitHub/EG2019_word_cloud/input/%s", party)
 dir(cname) #chech folder cname
 
 # Load texts into R with tm package
